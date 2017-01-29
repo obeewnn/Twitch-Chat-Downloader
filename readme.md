@@ -29,7 +29,7 @@ python app.py <video_id> <client_id>
 
 ### Notes
 
-- A client ID is currently not required by Twitch. If they eventually decides to require a client ID, `require_client_id` in `settings.json` should be set to `true` to require a client ID when running the script.
-- Empty messages means the user has been timed out. There's no known way to get these messages.
+- A client ID is currently not required by Twitch. If they ever decide to require a client ID, `require_client_id` in `settings.json` should be set to `true`, so that a client ID is required when running the script.
+- Empty messages means the user was timed out or banned. There's no known way to get these messages.
 - This script is using Twitch's undocumented ReChat API. The script may break at any time.
 - The longer VOD, the more API calls are made to Twitch (possibly thousands). Use with care and stay up to date on any rate limits.
